@@ -7,7 +7,7 @@ import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.Set;
 
-@Table("AUTHORS")
+@Table("authors")
 public class Author {
     @Id
     private Long id;

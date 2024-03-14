@@ -1,35 +1,15 @@
 package ru.flamexander.spring.data.jdbc.demo.dtos;
 
-import java.time.LocalDateTime;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.time.LocalDateTime;
+ @Getter
+ @Setter
 public class ErrorDto {
     private String code;
     private String message;
     private LocalDateTime date;
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDateTime date) {
-        this.date = date;
-    }
 
     public ErrorDto() {
     }
